@@ -1,0 +1,35 @@
+<div class="num" style="text-align: center;">
+<u>NUMBER</u>
+<h6>{{num}}</h6>
+    <h6>{{num | number:'3.2-6'}}</h6>
+    <br>
+    <u>CURRENCY</u>
+
+    <h6>{{num | currency:'INR'}}</h6>
+    <h6>{{num | currency:'GBP'}}</h6>
+    <h6>{{num | currency:'CAD'}}</h6>
+</div><br>
+
+<div class="date" style="text-align: center;">
+   <u> DATE & TIME </u>
+<h6>{{da}}</h6>
+    <h6>{{da | date:'fullDate'}}</h6>
+    <h6>{{da | date:'fullDate' | uppercase}}</h6>
+    <h6>{{da | date:'h:mm:ss'}}</h6>
+    <h6>{{da | date:'shortDate'}}</h6>
+    <h6>{{da | date:'shortTime'}}</h6>
+    </div><br>
+
+
+    <div class="SQRT" style="text-align: center;">
+  <!-- square root cheyyan sqrt create cheyyanam
+    ng g p sqrt -->
+   <u> SQUARE ROOT</u>
+    <h6>{{49 | sqrt}}</h6>
+
+    </div><br>
+    <div class="rvs" style="text-align: center;">
+        <u>REVERSE A STRING</u> 
+     <!-- revese -->
+     <h6>NORMAL WORD: {{msg}}</h6><h6>REVERSE WORD: {{msg | reverse}}</h6>
+</div>

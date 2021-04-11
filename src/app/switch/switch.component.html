@@ -1,0 +1,48 @@
+<h3>Select Day:<input type="text" id="inp" placeholder="choose day[1,2,3..etc]">
+&nbsp;
+<button (click)= "clickme()" class="btn btn-primary">Select</button></h3>
+
+<br>
+<div [ngSwitch]="day">
+    <h5 *ngSwitchCase="1">
+        Today is Sunday
+    </h5>
+    <h5 *ngSwitchCase="2">
+        Today is Monday
+    </h5>
+    <h5 *ngSwitchCase="3">
+        Today is Tuesday
+    </h5>
+    <h5 *ngSwitchDefault>
+        Today is Not Defined
+    </h5>
+
+    <h6>{{msg}}</h6>
+    <h6>{{msg | uppercase}}</h6>
+    <h6>{{msg |lowercase}}</h6>
+    <h6>{{msg |titlecase}}</h6>
+    <h6>{{msg | slice:2:7}}</h6>
+  
+    <h6>{{num}}</h6>
+    <h6>{{num | number:'3.2-6'}}</h6>
+    <h6>{{num | currency:'INR'}}</h6>
+    <h6>{{num | currency:'GBP'}}</h6>
+    <h6>{{num | currency:'CAD'}}</h6>
+    
+    
+   
+    <h6>{{da}}</h6>
+    <h6>{{da | date:'fullDate'}}</h6>
+    <h6>{{da | date:'fullDate' | uppercase}}</h6>
+    <h6>{{da | date:'h:mm:ss'}}</h6>
+    <h6>{{da | date:'shortDate'}}</h6>
+    <h6>{{da | date:'shortTime'}}</h6>
+    <!-- square root cheyyan sqrt create cheyyanam
+    ng g p sqrt -->
+    <h6>{{49 | sqrt}}</h6>
+
+    <!-- revese -->
+    <h6>{{msg | reverse}}</h6>
+        
+ 
+</div>

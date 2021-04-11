@@ -1,0 +1,29 @@
+<!-- {{postdata | json}} -->
+<table class="table table-secondary" >
+    <thead class="thead-dark">
+    <!-- table-light bg-primary" -->
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>PASSWORD</th>
+        <th colspan="2">ACTION</th>
+        
+        
+        
+    </tr>
+    </thead>
+    
+    <tr *ngFor="let s of result">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.password}}</td>
+        <td><button (click)= "clickme(s.email)" class="btn btn-primary">Edit</button></td>
+            <td><button (click)= "clickme(s.email)" class="btn btn-danger">Delete</button>
+        </td>
+  
+    </tr>
+    <!-- </tbody> -->
+    </table>
+    <div>.</div>

@@ -1,0 +1,25 @@
+<table class="table table-secondary" >
+    <thead class="thead-dark">
+    <!-- table-light bg-primary" -->
+    <tr>
+        <th>SL.NO</th>
+        <th>NAME</th>
+        <th>MARK 1</th>
+        <th>MARK 2</th>
+        <th>MARK 3</th>
+        <th>ACTION</th>
+        
+    </tr>
+    </thead>
+    
+    <tr *ngFor="let s of obj.student">
+        <td>{{s.slno}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.mark1}}</td>
+        <td>{{s.mark2}}</td>
+        <td>{{s.mark3}}</td>
+        <td><button (click)= "obj.clickme(s)" class="btn btn-warning">Total mark</button></td>
+    </tr>
+    <!-- </tbody> -->
+    </table>
+    <div>.</div>

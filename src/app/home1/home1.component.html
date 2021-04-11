@@ -1,0 +1,20 @@
+<!-- interpolation -->
+<p class="text-primary bg-warning">{{title}}!</p>
+<!-- propertybinding -->
+Enter your name:<input type="text" name="text" id="t" [value]='title1'>
+<!-- eventbinding -->
+<button (click)="clickme()">click</button>
+            <!-- if condition -->
+<!-- <h1 *ngIf = "isdata">if condition is true</h1> -->
+             <!-- if else condition -->
+<h5 *ngIf = "isdata;else elseBlock">if condition is true</h5>
+<ng-template #elseBlock>
+<h5  >if condition is false</h5></ng-template>
+
+<!-- for loop -->
+<ul>
+    <li *ngFor="let i of employee">{{i.name}}</li>
+    <li *ngFor="let i of employee">{{i.age}}</li>
+    <li *ngFor="let i of employee">{{i.salary}}</li>
+   
+    </ul>
